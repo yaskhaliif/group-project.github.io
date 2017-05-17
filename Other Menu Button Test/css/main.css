@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
+@font-face {
+    font-family: CandL;
+    src: url(../fonts/champagne_limousines/CandL.ttf);
+}
 *{
 	margin:0px;
 	padding:0px;
@@ -13,10 +17,22 @@ a{
 .menu a{
 	text-decoration:none;
 	color:black;
-	font-family:sans-serif;
-	display:block;
+	font-family:"CandL";
+	width:100%;
+	height:40px;
 	float:right;
 	font-size:3em;
+	text-align:right;
+	border-bottom:2px solid grey;
+
+	padding-bottom:10px;
+	padding-top:20px;
+	margin-right:20px;
+	transition:color 0.3s, background-color 0.3s;
+}
+.menu a:hover{
+	color:black;
+	background-color:rgb(210,210,210)
 }
 #first {
   background-image: url('../images/keyboard.jpg');
@@ -27,10 +43,15 @@ a{
 .menu{
 	width:20%;
 	height:100%;
-	background-color: rgb(240,240,240);
+	background-color: rgb(250,250,250);
 	float:left;
 	position:fixed;
-	opacity:0.9;
+	opacity:0.97;
+}
+.navigate{
+	display:flex;
+	flex-direction:column;
+	-webkit-flex-direction:column;
 }
 .menu-button{
 	width:60px;
@@ -42,22 +63,23 @@ a{
 	cursor:pointer;
 	position:fixed;
 }	
-
-.menu-button:hover .menubt{
-	background-color:rgb(220,220,220);
+.menu-button:hover .menul{
+	background-color:rgb(170,170,170);
 }
-.menubt{
+.menul{
 	margin-top:10px;
 	margin-left:10px;
-	height:13px	;
+	height:12px	;
 	width:100%;
 	background-color:white;
 	border:0.5px;
-	border-radius:3em;
+	border-radius:10px;
 	z-index:3;
-	transition: background-color 0.5s;
+	transition: background-color 0.3s;
 }
-
+.active{
+	background-color:black;
+}
 #box{
   display:inline-block;
   color:white;

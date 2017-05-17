@@ -1,13 +1,8 @@
 $(document).ready(function(){
 	$(".menu").hide();
+	$(".actitve").hide();
 	$(".menu-button").click(function(){
-		$(".menu").animate({width: "toggle"
-		});
-		$(".menubt").css("background-color","black")
+		$(".menu").animate({width: "toggle"});
+		$(".menul").toggleClass("active");
 	});
 });
-
-//first rime //click = true
-			//if click true = color that
-			//click false
-			//if click false
