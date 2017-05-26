@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Coiny|Permanent+Marker');
 @font-face {
     font-family: CandL;
     src: url(../fonts/champagne_limousines/CandL.ttf);
@@ -6,10 +7,6 @@
 *{
 	margin:0px;
 	padding:0px;
-}
-div {
-  height: 100vh;
-  width: 100%;
 }
 a{
   text-decoration:none;
@@ -38,11 +35,13 @@ a{
 	margin-top:70px;
 }
 #first {
-  background-image: url('../images/keyboard.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
+	background-image: url('../images/keyboard.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 100vh;
+	width: 100%;
+ }
 .menu{
 	width:20%;
 	height:100%;
@@ -111,7 +110,7 @@ a{
   text-align:center;
   width:20%;
   border: 0.15em solid white;
-  border-radius: 2em;
+  border-radius: 45px;
   height: 10vh;
   line-height:10vh;
   position: absolute;
@@ -133,40 +132,47 @@ cursor:pointer;
   color: rgba( 0 , 0 , 0 , 0.7);
 }
 #second {
-  background-color: rgb(70, 70, 70);
-  display:table;
+	background-color: rgb(70, 70, 70);
+	height: 100vh;
+	width: 100%;
 }
 
 #second section {
   width: 50%;
-  display:table-cell;
-  vertical-align:middle;
+  float:left;
 }
-
-#second p {
-  color: white;
-  font-size: 1.5em;
-  font-family:'Raleway';
-  width:80%;
-  margin:0 auto;
+#second section div{
+	position: absolute;
+	background: #fff;
+	border-radius: 2px;
+	height: 80vh;
+	margin-top: 7vh;
+	padding-top: 8vh;
+	margin-left:2vw;
+	width: 40%;
+	text-align: center;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	font-family:'Raleway';
+	box-sizing:border-box;
 }
-
 #second article {
   width: 50%;
   float: right;
   text-align:center;
-  display:table-cell;}
-
+}
 #third {
   background-attachment: fixed;
   background-image: url("../images/factory.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+	height: 100vh;
+	width: 100%;
 }
 
 #fourth {
 	background-color:rgb(100, 100, 100);
-	box-shadow:20px 20px black;
+	height: 100vh;
+	width: 100%;
 }
 
 #fifth {
@@ -174,16 +180,58 @@ cursor:pointer;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-}
+	height: 100vh;
+	width: 100%;
+ }
 #sixth {
-  max-width: 50%;
+  width: 50%;
   float: left;
   background-color: rgb(100, 100, 100);
   height: 100vh;
+	display:inline-block;
+ }
+#sixthnseventh {
+	width: 100%;
+	height: 100vh;
+	background-color: rgb(255, 255, 255);
+	padding:0px;
+	margin:0px;
 }
-#seventh {
-  max-width: 50%;
-  float: right;
-  height: 100vh;
+#seventh{
+    
 }
+#seventh img{
+	width:50%;
+	height:50vh;
+     float:right;
+     display: block;
 
+}
+#eighth {
+	clear:both;
+	background-image: url("../images/graywood.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	width: 100%;
+}
+#ninth{
+	background-color:rgb(100, 100, 100);
+	height: 100vh;
+	width: 100%;
+}
+#tenth{
+	background-image: url("../images/circuitb.png");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	width: 100%;
+	}
+#eleventh{
+	background-color:rgb(200, 200, 200);
+	height: 100vh;
+	width: 100%;
+}
+	

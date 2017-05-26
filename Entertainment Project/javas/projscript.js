@@ -17,5 +17,8 @@ $(document).ready(function(){
 		$(".menul").toggleClass("active");
 		$("#fade").fadeToggle();
 	});
-	
+	var y = $(window).scrollTop(); 
+	$(".containtrione").click(function(){
+		$("html, body").animate({ scrollTop: y + $(window).height() }, 600);
+	});
 });
