@@ -15,8 +15,7 @@
 a{
   text-decoration:none;
 }
-.menu a{
-	text-decoration:none;
+.list{
 	color:black;
 	font-family:"CandL";
 	width:100%;
@@ -29,6 +28,7 @@ a{
 	padding-top:30px;
 	margin-right:20px;
 	transition:color 0.3s, background-color 0.3s;
+    overflow: hidden;
 }
 .menu a:hover{
 	color:black;
@@ -167,7 +167,7 @@ cursor:pointer;
 }
 
 #second section div h1 {
-    text-align: left;
+    text-align: center;
     font-size: 2.5em;
 }
 #second article {
@@ -542,7 +542,6 @@ cursor:pointer;
     float:right;
     display: block;
     transition: filter 0.7s, opacity 0.7s;
-    transition: filter 0.7s, opacity 0.7s;
     cursor: pointer;
     position: absolute;   
     opacity: 0.6;
@@ -622,12 +621,6 @@ cursor:pointer;
     color: black;
     font-size: 15px;
     font-family: 'Raleway', sans-serif;
-}
-
-.list-type li:hover, .second-type ol li:hover {
-    box-shadow: inset -1em 0 #6CD6CC;
-    -webkit-transition: box-shadow 0.5s;
-    transition: box-shadow 0.5s;
 }
 
 .list-type ol li:before {
@@ -888,7 +881,6 @@ cursor:pointer;
 }
 
 #list2 ol {
-    font-weight: bold;
     font-family:'CandL';
     font-size: 25px;
     color: black;

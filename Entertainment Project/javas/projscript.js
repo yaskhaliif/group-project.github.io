@@ -4,15 +4,11 @@ $(document).ready(function(){
 	$("#fade").hide();
     $(".imagecontent").hide();
     $(".buttoncontain").hide();
-    $("#cover").hide();
-    $("#covertwo").hide();
-    $("#linkone").hide();
-    $("#linktwo").hide();
     $(".menu-button").click(function(){
 		$(".menu").animate({width: "toggle"});
 		$(".menul").toggleClass("active");
 		$("#fade").fadeToggle();
-	});
+    });
 	$("#fade").click(function(){
 		$("#fade").fadeOut();
 		$(".menu").animate({width:"hide"});
