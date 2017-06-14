@@ -4,15 +4,11 @@ $(document).ready(function(){
 	$("#fade").hide();
     $(".imagecontent").hide();
     $(".buttoncontain").hide();
-    $("#cover").hide();
-    $("#covertwo").hide();
-    $("#linkone").hide();
-    $("#linktwo").hide();
     $(".menu-button").click(function(){
 		$(".menu").animate({width: "toggle"});
 		$(".menul").toggleClass("active");
 		$("#fade").fadeToggle();
-	});
+    });
 	$("#fade").click(function(){
 		$("#fade").fadeOut();
 		$(".menu").animate({width:"hide"});
@@ -39,5 +35,15 @@ $(document).ready(function(){
         $(".buttoncontain").animate({height:"hide"},1000);
         $("#read").fadeIn(500);
         $(".more").fadeIn(500);
+    });
+    $(".torrenting-label").click(function(){
+        $(this).css("background-color","rgb(240,240,240)");
+        $(".pirating-label").css("background-color","white");
+        $(".first-cont").css("z-index","-1");
+    });
+    $(".pirating-label").click(function(){
+        $(this).css("background-color","rgb(240,240,240)");
+        $(".torrenting-label").css("background-color","white");
+        $(".first-cont").css("z-index","2");
     });
 });

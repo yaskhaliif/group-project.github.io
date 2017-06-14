@@ -15,8 +15,7 @@
 a{
   text-decoration:none;
 }
-.menu a{
-	text-decoration:none;
+.list{
 	color:black;
 	font-family:"CandL";
 	width:100%;
@@ -29,6 +28,7 @@ a{
 	padding-top:30px;
 	margin-right:20px;
 	transition:color 0.3s, background-color 0.3s;
+    overflow: hidden;
 }
 .menu a:hover{
 	color:black;
@@ -167,7 +167,7 @@ cursor:pointer;
 }
 
 #second section div h1 {
-    text-align: left;
+    text-align: center;
     font-size: 2.5em;
 }
 #second article {
@@ -341,7 +341,7 @@ cursor:pointer;
     background: white;
     opacity: 0.9;
     font-family: "CandL";
-    font-size: 2.4em;
+    font-size: 2.5em;
     margin-right: 5vw;
     margin-left: 5vw;
 }
@@ -369,13 +369,12 @@ cursor:pointer;
     padding: 0;
 }
 
-#sixth .read{   
+.read{   
     position: relative;
 	background: #fff;
 	border-radius: 2px;
 	height: 90vh;
 	margin-top: 5vh;
-	padding-top: 6vh;
     margin-left: 10%;
     width: 80%;
     text-align: center;
@@ -387,99 +386,54 @@ cursor:pointer;
 #sixth div p{
     text-align: left;
     padding-top: 4vh;
-    padding-right: 25px;
-    padding-left: 25px;
-    line-height: 5vh;
-    font-size:1.3em;
-    
+    padding-right: 20px;
+    padding-left: 20px;
+    line-height: 5.5vh;
+    font-size:1.6em;   
+    letter-spacing: 2px;
 }
-
-.first-read {
-    height: 85vh;
-    width: 100%;
-    margin-top: -2%;
-}
-
-.read-more-wrap {
-    width:91%;
-    height: 80vh;
-    overflow: hidden;
-    background: #fff9c6;
-    float: left;
-    text-align: left;
-    font-size: 18px;
-    margin-top: 10%;
-}
-
-.pirating-input:checked ~ .first-cont {
-    position:absolute;
-    display:block;
-}
-
-.pirating-input:checked ~ .second-cont {
-    position:absolute;
-    display:none;
-}
-
-.torrenting-input:checked ~ .second-cont {
+.pirating-label{
+    float:left;
     position: absolute;
-    display:none;
-}
-
-.torrenting:checked ~ .first-cont {
-    position: absolute;
-    display:block;
-}
-
-
-.pirating-input, .torrenting-input {
-    display: none;
-}
-
-.torrenting-label {
-    float: left;
     left: 0;
-    margin-top: -5.5%;
-    position: absolute;
-    padding: 8.3vh;
-    padding-left: 17vh;
+    width:50%;
+    height: 15vh;
     text-align: center;
-    background-color: #fff9c6;
+    background-color: rgb(240,240,240);
+    vertical-align: middle;
+    line-height: 15vh;
+    font-size:2em;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
-
-.pirating-input:checked ~ .pirating-label {
-    background-color: #fff9c6;
-}
-
-.pirating-input:checked ~ .torrenting-label{
-    background-color: #fff;
-}
-
-.pirating-label {
+.torrenting-label{
     float: right;
     right: 0;
-    position: absolute;
-    margin-top: -5.5%;
-    padding: 8.3vh;
-    padding-right: 18.2vh;
+    width:50%;
     text-align: center;
-}
-
-.first-cont {
+    background-color:white;
     position: absolute;
-    width: 100%;
-    height: vh;
-    margin-top: 10%;
+    height: 15vh;
+    vertical-align: middle;
+    line-height: 15vh;
+    font-size:2em;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
-
 .first-cont {
-    padding-bottom: vh;
+    width: 100%;
+    height:75vh;
+    position: absolute;
+    background-color: rgb(240,240,240);
+    z-index: 2;
+    bottom:0;
 }
 .second-cont {
-    position: absolute;
     width: 100%;
-    height: 20vh;
-    margin-top: 10%;
+    height: 75vh;
+    position: absolute;
+    background-color: rgb(240,240,240);
+    bottom:0;
 }
 
 #sixthnseventh {
@@ -541,7 +495,6 @@ cursor:pointer;
 	height:50vh;
     float:right;
     display: block;
-    transition: filter 0.7s, opacity 0.7s;
     transition: filter 0.7s, opacity 0.7s;
     cursor: pointer;
     position: absolute;   
@@ -622,12 +575,6 @@ cursor:pointer;
     color: black;
     font-size: 15px;
     font-family: 'Raleway', sans-serif;
-}
-
-.list-type li:hover, .second-type ol li:hover {
-    box-shadow: inset -1em 0 #6CD6CC;
-    -webkit-transition: box-shadow 0.5s;
-    transition: box-shadow 0.5s;
 }
 
 .list-type ol li:before {
@@ -888,15 +835,14 @@ cursor:pointer;
 }
 
 #list2 ol {
-    font-weight: bold;
     font-family:'CandL';
     font-size: 25px;
     color: black;
 }
 
 #list2 ol li {
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-top: 3px;
+    padding-bottom: 3px;
 }
 
 #list2 ol li p {
@@ -910,8 +856,3 @@ cursor:pointer;
 #list2 ol li p em {
     display: block;
 }
-
-
-
-
-
